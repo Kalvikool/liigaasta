@@ -1,0 +1,16 @@
+b = input("Sisesta aastaarv:  ")
+a=int(b)
+if len(b) == 4 :       
+
+    if ( a % 4) == 0:
+        if ( a % 100) == 0:
+            if ( a % 400) == 0:
+                print("{0} on liigaasta/400".format(a))  
+            else:  
+                print("{0} ei ole liigaasta/400".format(a))
+        else:  
+            print("{0} on liigaasta/100".format(a))  
+    else:  
+        print("{0} ei ole liigaasta/4".format(a))  
+else:
+    print( 'Sisend peab olema nelja numbriline')
